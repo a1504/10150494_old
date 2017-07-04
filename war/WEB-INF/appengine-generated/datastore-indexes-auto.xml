@@ -1,0 +1,37 @@
+<!-- Indices written at Mon, 15 Feb 2016 19:53:20 COT -->
+
+<datastore-indexes>
+
+    <!-- Used 19 times in query history -->
+    <datastore-index kind="Canal" ancestor="true" source="auto">
+        <property name="dateLastPost" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 14 times in query history -->
+    <datastore-index kind="ChannelJoin" ancestor="false" source="auto">
+        <property name="userName" direction="asc"/>
+        <property name="dateLastPost" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 3 times in query history -->
+    <datastore-index kind="Join" ancestor="true" source="auto">
+        <property name="dateJoin" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="Invitacion" ancestor="true" source="auto">
+        <property name="dateInvitation" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 35 times in query history -->
+    <datastore-index kind="Post" ancestor="true" source="auto">
+        <property name="hasWith" direction="asc"/>
+        <property name="date" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 3 times in query history -->
+    <datastore-index kind="Cometario" ancestor="true" source="auto">
+        <property name="date" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>
